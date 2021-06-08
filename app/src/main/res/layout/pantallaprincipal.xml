@@ -10,14 +10,16 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="City Light"
+        android:capitalize="none"
+        android:text="CITY LIGHT"
         android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
+        app:layout_constraintVertical_bias="0.249" />
 
     <Button
         android:id="@+id/enter"
@@ -26,7 +28,21 @@
         android:text="Enter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.646" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="180dp"
+        android:layout_height="257dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425"
+        app:srcCompat="@drawable/rrycak_street_light_clipart_png_photos" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
