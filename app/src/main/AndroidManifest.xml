@@ -23,6 +23,7 @@
         <activity android:name=".MyIncidences" />
         <activity android:name=".ReportIncidence1" />
         <activity android:name=".ReportIncidence2" />
+        <activity android:name=".Exit" />
     </application>
 
 </manifest>
