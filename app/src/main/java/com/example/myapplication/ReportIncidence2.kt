@@ -47,7 +47,7 @@ class ReportIncidence2 : AppCompatActivity() {
 
             val map = HashMap<String, String>();
             map.set("name", "yo");
-            map.set("message", "Repoted the incident $report at streetlight $light")
+            map.set("message", "Reported the incident $report at streetlight $light")
 
             findViewById<TextView>(R.id.textView6).setText(map.get("message"))
 
