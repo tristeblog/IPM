@@ -33,7 +33,7 @@ class MyIncidences : AppCompatActivity() {
         var count = 0;
         for(issue in openedissues) {
             val textView = TextView(this);
-            textView.setText("issue ${++count} 3\n Code: $newIssue");
+            textView.setText("issue ${++count}\n Code: $newIssue");
             findViewById<LinearLayout>(R.id.incidences).addView(textView);
         }
 

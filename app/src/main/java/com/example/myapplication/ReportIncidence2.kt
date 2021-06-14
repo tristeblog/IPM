@@ -31,9 +31,6 @@ class ReportIncidence2 : AppCompatActivity() {
         }
 
         findViewById<ImageButton>(R.id.rp2next).setOnClickListener {
-            //val intentLogin = Intent(this, Menu::class.java).apply {}
-            findViewById<TextView>(R.id.textito).setText(light as String);
-            //startActivity(intentLogin)
 
             val issueID = findViewById<RadioGroup>(R.id.issue).checkedRadioButtonId;
 
@@ -50,7 +47,7 @@ class ReportIncidence2 : AppCompatActivity() {
 
             val map = HashMap<String, String>();
             map.set("name", "yo");
-            map.set("message", "Reportada una incidencia $report en la farola $light")
+            map.set("message", "Repoted the incident $report at streetlight $light")
 
             findViewById<TextView>(R.id.textView6).setText(map.get("message"))
 
@@ -60,7 +57,7 @@ class ReportIncidence2 : AppCompatActivity() {
             val url = "https://formsubmit.co/sandra.rodriguez06@estudiant.upf.edu";
             val postRequest = JsonObjectRequest(Request.Method.POST, url, json,
                 { response ->
-                    Toast.makeText(this, "Peticion enviada", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "Sent", Toast.LENGTH_LONG).show();
                 },
                 {
                     Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();

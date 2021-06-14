@@ -37,8 +37,6 @@ class ReportIncidence1 : AppCompatActivity() {
             val content = result.contents;
             //ESTE CONTENT TIENE EL CONTENIDO DEL QR
             Toast.makeText(this, content, Toast.LENGTH_LONG);
-            val viewer = findViewById<TextView>(R.id.textv);
-            //viewer.setText(content);
             val issuesScreen = Intent(this, ReportIncidence2::class.java);
             issuesScreen.putExtra("light", content);
             startActivity(issuesScreen);
